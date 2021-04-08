@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room list</title>
+</head>
+<body>
+    <h1>Welcome to room boys</h1>
+    {%for rom in room_list%}<!--when we use this type of view as we used in views.py for RoomList we get our list in the form of model name(room)_list -->
+    <h2>{{rom}}</h2>
+    {% endfor %}
+    <!--double curly bracket is nothing but just for a variable(passing python variable to Html template we use double curly bracket)-->
+    <!--single curly bracket is to differentiate python from HTML-->
+    <!--% is used for python code-->
+    <h1>haha</h1>  
+</body>
+</html>

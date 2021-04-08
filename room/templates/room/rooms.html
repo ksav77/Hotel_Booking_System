@@ -1,0 +1,16 @@
+{% extends "room/base.html" %}
+<!-- room ko base.html -->
+{% block content %}
+<!-- for overriding from base.html -->
+ <!-- block is a section that child template can override -->
+    <h1>Welcome to Rooms of Annapurna Hotel</h1> 
+    <div class = "container">
+        {% for x in pics %}
+        <a href="">
+            <img src="{{x.image.url}} " alt="Responsive image"><!--image is image of model and url is url of the image-->
+            <p class="cap">{{x.caption}}</p>
+        </a>   
+        {% endfor %}
+    </div>
+{% endblock content %}
+      
