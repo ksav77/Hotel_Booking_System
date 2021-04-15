@@ -18,8 +18,9 @@ class Room(models.Model):#inherited from models.model
     def __str__(self):
         return f'{self.roomnumber}. {self.category} with {self.beds} beds for {self.capacity} people'
 
-class Image(models.Model):
+class ImagePost(models.Model):
     caption = models.CharField(max_length=50)
+    description = models.CharField(max_length=200)
     image = models.FileField(upload_to='db.sqlite3', blank = True)#%y for year#file will be saved to MEDIA_ROOT / img / 2021#Media_root is for server path to store files in the computer.
 
     def __str__(self):

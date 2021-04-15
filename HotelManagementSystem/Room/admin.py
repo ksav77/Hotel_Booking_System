@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Room, Image
+from .models import Room, ImagePost
 
 admin.site.register(Room)
-admin.site.register(Image)
+admin.site.register(ImagePost)

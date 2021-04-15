@@ -6,9 +6,10 @@
     <h1>Welcome to Rooms of Annapurna Hotel</h1> 
     
         {% for x in pics %}
+        
             <div class = "Photos">
-             <div class="Gallery">         
-                <a href="" style="text-decoration: none;">
+             <div class="Gallery"> 
+                <a href="{{x.id}}" style="text-decoration: none;">       
                     <img src="{{x.image.url}}" alt="Responsive image" width="300" height="250"><!--image is image of model and url is url of the image-->
                     <p class="cap">{{x.caption}}</p>
                 </a>   

@@ -11,6 +11,7 @@ urlpatterns = [
     path('', views.home, name='blog-home'),  #views.home vaneko views ko home function 
     path('room/', views.rooms, name='blog-room'), 
     path('aboutus/',views.about,name='blog-about'),
+    path('aboutuscontinue/',views.cont,name='blog-aboutcon'),
 ]
 
 if settings.DEBUG:

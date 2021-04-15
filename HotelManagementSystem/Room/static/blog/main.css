@@ -41,6 +41,7 @@ nav a:hover{
   text-transform: uppercase;
 }
 
+/* Rooms page */
 .Gallery{
 	border: 1px solid #ccc;
 }
@@ -51,6 +52,7 @@ nav a:hover{
 	padding: 5px 6px;
 	float: left;
 	width: 33%;
+  margin-bottom: 10px;
 }
 .cap{
 	padding: 12px;
@@ -59,6 +61,8 @@ nav a:hover{
 	font-family: cursive;
 	font-size: 14px; 
 }
+
+/* about us page */
 .div3{
     width: 100%;
 }
@@ -69,6 +73,10 @@ nav a:hover{
     margin-top: 90px;
     box-shadow: 1px 2px 10px 5px  rgb(44, 43, 43);
     margin-right: 50px;
+    margin-bottom: 50px;
+}
+.div5{
+  margin-bottom: 50px;
 }
 .div2 h1{
     text-align:  center;
@@ -77,7 +85,7 @@ nav a:hover{
 .div2 p{
     text-align: center;
     margin-left: 100px;
-}
+} 
 .div1{
     width: 50%;
 }
@@ -85,15 +93,11 @@ nav a:hover{
   float: left;
   margin-left: 90px;
   margin-top: 20px;
+  width: 70%;
+  height: 500px;
+  box-shadow: 1px 2px 10px  purple;
+}
 
-width: 70%;
-height: 500px;
-box-shadow: 1px 2px 10px  purple;
-}
-.div2 a{
-    text-align: center;
-    margin-left: 100px;
-}
 .div4{
    padding: 10%;
    border: 5px solid rgb(97, 19, 187);
@@ -105,4 +109,32 @@ box-shadow: 1px 2px 10px  purple;
 }
 body{
     background-color: white;
+}
+.para{
+  text-align: justify;
+  color: black;
+}
+.div5{
+  width: 50%;
+  float: right;
+  padding: 5%;
+  margin-top: 90px;
+  box-shadow: 1px 2px 10px 5px  rgb(44, 43, 43);
+  margin-right: 50px;
+}
+.div5 h1{
+  text-align: center;
+}
+
+/* footer */
+.footer{
+	background-color:rgb(238, 238, 238);
+	position: relative;
+	margin-top: -20px;
+	clear: both;
+	height: 80px;
+}
+.footer h3{
+	color: black;
+	text-align: center;
 }
