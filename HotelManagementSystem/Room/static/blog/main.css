@@ -49,11 +49,12 @@ nav a:hover{
 	width: 100%;
 }
 .Photos{
-	padding: 5px 6px;
+	padding: 1px 6px;
 	float: left;
 	width: 33%;
-  margin-bottom: 10px;
+  margin-bottom: 2%;
 }
+
 .cap{
 	padding: 12px;
 	text-align: center;
@@ -137,4 +138,25 @@ body{
 .footer h3{
 	color: black;
 	text-align: center;
+}
+.detailfooter{
+  margin-bottom: 20%;
+}
+.detailfooter img{
+  margin-top: 3%;
+  padding-bottom: 20px;
+}
+.detailfooter p{
+  box-shadow: 1px 2px 5px black;
+  width: 38.5%;
+}
+.div8 h1{
+  text-align: center;
+  box-shadow: 1px 2px 5px 3px black;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+}
+.Photos{
+  margin-top:2% ;
 }
