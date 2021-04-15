@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from django.views.generic import ListView
-from .models import Room, ImagePost, HomeImage
+from .models import ImagePost, HomeImage
 # Create your views here.
 
 
@@ -11,7 +11,8 @@ def home(request):
 
 def rooms(request):
     pics = ImagePost.objects.all()
-    return render(request, 'room/rooms.html',{"pics":pics})#we pass django variable as third argument which takes 
+    return render(request, 'room/rooms.html',{"pics":pics})#we pass django variable as third argument whose key(pics) contains dictionary of data.
+    
     
 def about(request):
     return render(request,'room/aboutus.html')  
