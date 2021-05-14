@@ -14,7 +14,7 @@
             <form id="reserve" action="{{x.id}}" method="post">
                 {% csrf_token %}
                 <input type="text" name="fullname" id="fullname" class="form-control" placeholder="Full name" required><br>
-                <input type="text" name="contact" id="contact" class="form-control" placeholder="Contact Number" required><br>
+                <input type="number" name="contact" id="contact" class="form-control" placeholder="Contact Number" required><br>
                 <textarea type="text" name="room" class="form-control" placeholder="Select Room" rows="1" readonly >{{theta_image.caption}}</textarea><br>
                 <h4>Check in</h4>
                 <input type="date" name="checkin" id="checkin" class="form-control" placeholder="" required><br>
