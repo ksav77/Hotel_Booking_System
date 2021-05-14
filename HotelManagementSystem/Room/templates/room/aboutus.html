@@ -1,0 +1,24 @@
+{% extends "room/base.html" %}
+<!-- room ko base.html -->
+{% block content %}
+<!-- for overriding from base.html -->
+ <!-- block is a section that child template can override -->
+ {% load static %}
+    <div class="div3">
+        <div class="div1">
+            <img src="{% static "media/abc.jpg" %}" >
+            </img>
+            </div> 
+            <div class="div2">
+                <div class="d" style="width: 80%;">
+                <h1 class="About">About Us</h1>
+                <br>
+                <p>The Annapurna Hotel is located just 3 Kms from Kathmandu International Airport and International Convention Centre and conveniently established at a place surrounded by Tourist hotspots, shopping Centre, Pashupatinath and Changu Narayan Temple.</p>
+                <br>
+                <a href="{% url 'blog-aboutcon' %}" target="_blank" style="margin-left: 250px;"><button class="btn btn-danger">Continue reading</button></a> 
+            </div>
+            </div>
+     </div>
+     
+{% endblock content %}
+      

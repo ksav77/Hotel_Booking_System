@@ -1,0 +1,51 @@
+{% extends "room/base.html" %}
+<!-- blog ko base.html -->
+{% block content %}
+<!-- for overriding from base.html -->
+{% load static %}
+<div class="div9">
+               <img src= "{% static "media/contact.jpg" %}" alt="contacting image">
+              <form  method = "POST">
+                {% csrf_token %}
+                <div class="container" >
+                <div class="row">
+                  <div class="col1">
+                    <label for="fname">First Name</label>
+                  </div>
+                  <div class="col2">
+                    <input name="fname" type="text" id="fname"  placeholder="Your First name.." required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col1">
+                    <label for="lname">Last Name</label>
+                  </div>
+                  <div class="col2">
+                    <input name="lname" type="text" id="lname"  placeholder="Your last name.." required>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col1">
+                        <label for="Contact">Contact No.</label>
+                      </div>
+                      <div class="col2">
+                        <input name="Contactnumber" type="number" id="Contact"  placeholder="Your Contact number" required >
+                      </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col1">
+                    <label for="subject">Message</label>
+                  </div>
+                  <div class="col2">
+                    <textarea name="message" id="subject" placeholder="Write something.." style="height:200px" required></textarea>
+                  </div>
+                </div>
+                <div class="row">
+  
+                  <input type="submit" value="Submit">
+                
+                </div>
+                </form>
+              </div>
+ {% endblock content %}

@@ -1,0 +1,23 @@
+{% extends "room/base.html" %}
+<!-- room ko base.html -->
+{% block content %}
+<!-- for overriding from base.html -->
+ <!-- block is a section that child template can override -->
+ {% load static %}
+    <div class="div3">
+        <div class="div1">
+            <img src="{% static "media/abc.jpg" %}" >
+            </img>
+            </div> 
+            <div class="div5">
+                <div class="d" style="width: 80%;">
+                <h1 class="About">About Us</h1>
+                <div class="para">
+                <p>The Annapurna Hotel is located just 3 Kms from Kathmandu International Airport and International Convention Centre and conveniently established at a place surrounded by Tourist hotspots, shopping Centre, Pashupatinath and Changu Narayan Temple.The traditional, warmly decorated rooms feature minifridges and flat-screen TVs, plus tea and coffeemaking facilities. Upgraded rooms come with free Wi-Fi and/or sitting areas, while club rooms have access to a private lounge with drinks and snacks. Suites offer separate living and dining areas (1 has a kitchen). Amenities include 3 restaurants, a bar and a bakery, as well as 5 event spaces and a business centre. There’s also a fitness room and an outdoor pool.</p>
+                </div>               
+            </div>
+            </div>
+     </div>
+     
+{% endblock content %}
+      

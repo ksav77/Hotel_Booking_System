@@ -1,0 +1,12 @@
+{% extends "room/base.html" %}
+<!-- room ko base.html -->
+{% block content %}
+<!-- for overriding from base.html -->
+ <!-- block is a section that child template can override -->
+ <div class="detailfooter">
+
+    <img src={{theta_image.image.url}} alt="picture" width="500" height="350">
+    
+    <p>{{theta_image.description}}</p>
+</div>
+{% endblock content %}
