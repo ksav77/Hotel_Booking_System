@@ -6,6 +6,9 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
+#Django admin header customization
+admin.site.site_header = "Annapurna Hotel"
+admin.site.index_title = "Welcome to Annapurna Hotel Dashboard"
 
 urlpatterns = [
     path('', views.home, name='blog-home'),  #views.home vaneko views ko home function 

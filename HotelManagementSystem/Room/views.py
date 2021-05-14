@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from django.views.generic import ListView
 from .models import ImagePost, HomeImage
+from Room.models import Bookform
 # Create your views here.
 
 
@@ -21,7 +22,19 @@ def cont(request):
     return render(request,'room/continue.html')      
 
 def details(request, image_id):
+
+    if request.method=="POST":
+        fullname = request.POST['fullname']
+        contact = request.POST['contact']
+        room = request.POST['room']
+        checkin = request.POST['checkin']
+        checkout = request.POST['checkout']
+        print(fullname, contact, room, checkin, checkout)
+        ins = Bookform(fullname=fullname, contact=contact,room=room,checkin=checkin,checkout=checkout)
+        ins.save()
+
     theta_image = get_object_or_404(ImagePost, pk=image_id)#get_object_or_404 get objects based on primary key,each objects in databse has number assigned to primary key
+   
     return render(request, 'room/detail.html',{"theta_image":theta_image})
 
 

@@ -17,3 +17,14 @@ class ImagePost(models.Model):
 
     def __str__(self):
       return self.caption        
+
+class Bookform(models.Model):
+    fullname = models.CharField(max_length=30)
+    contact = models.CharField(max_length=15)
+    room = models.CharField(max_length=30)
+    checkin = models.CharField(max_length=30)
+    checkout = models.CharField(max_length=30)
+
+    
+    def __str__(self):
+      return "Booked by"+" "+self.fullname    
