@@ -1,1 +1,1 @@
-All codes are under Room directory.
+All finalized codes are under Room directory.
