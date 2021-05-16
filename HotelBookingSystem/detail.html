@@ -1,0 +1,119 @@
+{% extends "room/base.html" %}
+<!-- room ko base.html -->
+{% block content %}
+<!-- for overriding from base.html -->
+ <!-- block is a section that child template can override -->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<div class="collect">
+    <div class="detailfooter">
+        <img src={{theta_image.image.url}} alt="picture" width="100%" height="250"> 
+        <p>{{theta_image.description}}</p>   
+    </div>
+        <div class="page-forms">
+            <form id="reserve" method="post" action="">
+                <input type="text" name="name" class="form-control" placeholder="Full name" required><br>
+                <input type="text" name="Contact" class="form-control" placeholder="Contact Number" required><br>
+                <input type="text" name="name" class="form-control" placeholder="Select Room" required><br>
+                <h4>Check in</h4>
+                <input type="date" name="datetype" class="form-control" placeholder="" required><br>
+                <h4>Check out</h4>
+                <input type="date" name="datetype" class="form-control" placeholder="P" required min="2021"><br>
+                <button onclick="addData"><input type="submit" class="form-submisiion" value="Book" style="cursor: pointer;"></button>
+            </form>
+        </div>    
+</div>
+ 
+        <style>
+            .collect{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                
+            }
+
+ .form-content{
+	
+	line-height: 38px;
+	margin-left: 10px;
+	
+}
+.form-content h1{
+	margin-right: 28px;
+
+}
+.page-forms {
+    margin-bottom: 100px;
+    width: 70%;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    margin: auto;
+    border: 2px solid gray;
+    
+	
+	
+}
+.page-forms h4{
+    font-family: 'Anton', sans-serif;
+}
+.form-control{
+	width: 50%;
+	margin-left: 10px;
+	
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	transition: all  ease;
+	line-height: 30px;
+	
+	
+}
+.form-control[type="text"]{
+	margin: 10px;
+}
+.contact-info{
+	text-align: center;
+	margin-right: 10px;
+	font-family: 'Comfortaa', cursive;
+
+}
+/* Responsive */
+@media screen and (max-width: 1116px){
+	.form-control{
+		line-height: 27px;
+		width: 70%;
+}
+}
+@media screen and (max-width: 1086px){
+.form-control{
+		line-height: 27px;
+		width: 75%;
+}
+}
+@media screen and (max-width: 986px){
+	.form-control{
+		line-height: 25px;
+		width: 80%;
+	}
+}
+@media screen and (max-width: 736px){
+	.collect{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .form-control{
+		line-height: 23px;
+		width: 90%;
+}
+}
+@media screen and (max-width: 480px){
+	.form-control{
+		line-height: 18px;
+		width: 80%;
+}
+}
+
+        </style>
+
+{% endblock content %}

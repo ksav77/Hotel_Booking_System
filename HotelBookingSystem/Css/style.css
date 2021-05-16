@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#page-header{
+    width: 100%;
+    background: rgb(245, 245, 245);
+}
+.logo{
+    float:left;
+    width: 60%;
+}
+.navbar li{
+    display: inline-block;
+
+}
+.nav-links{
+    list-style-type: none;
+    float: right;
+    margin: 0px 0px 0px -60px;
+}
+
+
+nav a{
+    display: block;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Yatra One', cursive;
+    font-size: 18px;
+    
+}
+
+
+.heading{
+    text-align: center;
+    margin-top: 10px;
+}
+.main-section{
+    max-width: 1200px;
+    grid-auto-rows: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding-top: 30px;
+    align-items: center;
+    margin-left: 80px;
+    
+}
+.sec-link{
+    text-decoration: none;
+    color: black;
+}
+
+
+.wrap{
+    background-color:rgb(5, 1, 1);
+    width: 100%;
+    margin-bottom:-19px;
+}
+.del{
+    display: inline;
+    color: lavender;
+    float: left;
+    margin-top: 3px;
+    
+}
+.add{
+    float: left;
+}
+.fot-icon{
+    float: right;
+    padding: 5px;
+    color: white;
+    
+}
+.fot-icon:hover{
+    color:cornflowerblue;
+}
+.text{
+   
+    text-align: center;
+
+}
+.cl{
+    margin-top: 10px;
+    color: white;
+}
+
