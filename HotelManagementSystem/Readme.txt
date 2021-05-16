@@ -1,1 +1,1 @@
-All codes are under Room directory.
+All django codes are under Room directory.
